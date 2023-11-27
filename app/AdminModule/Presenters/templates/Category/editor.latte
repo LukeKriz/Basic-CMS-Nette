@@ -1,0 +1,35 @@
+{* Latte template *}
+
+{block content}
+<div class="row">
+    <div class="col-xl-12 col-lg-8">
+        <div class="shadow mb-4">
+            <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+                <h6 class="m-0 font-weight-bold">Editor kategorie
+                </h6>
+            </div>
+            <div class="card-body">
+                {* Formulář pro editaci. *}
+                {control editorForm}
+            </div>
+        </div>
+    </div>
+</div>
+
+{/block}
+
+{block scripts}
+{include parent}
+<script src="{$basePath}/js/speakingurl.min.js"></script>
+<script src="{$basePath}/js/slugify.min.js"></script>
+<script>
+    jQuery(function ($) {
+        $.slugify("Ätschi Bätschi"); // "aetschi-baetschi"
+        $('#frm-editorForm-url').slugify('#frm-editorForm-name'); // Type as you slug
+
+        $("#frm-editorForm-url").slugify("#frm-editorForm-name", {
+            separator: '-' // If you want to change separator from hyphen (-) to underscore (_).
+        });
+    });
+</script>
+{/block}

@@ -1,0 +1,22 @@
+<?php
+
+
+declare(strict_types=1);
+
+namespace app\Forms;
+
+use Nette;
+use Nette\Application\UI\Form;
+use Tomaj\Form\Renderer\BootstrapVerticalRenderer;
+
+final class FormFactory
+{
+	use Nette\SmartObject;
+
+	public function create(): Form
+	{
+		$form = new Form;
+		$form->setRenderer(new BootstrapVerticalRenderer);
+		return $form;
+	}
+}

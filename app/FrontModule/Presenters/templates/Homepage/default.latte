@@ -1,0 +1,13 @@
+{block content}
+    <div class="card mt-4">
+        {if $article->has_picture}
+            <img class="card-img-top" src="{$basePath}/images/cms/{$article->id}.jpg?{time()}" alt="{$article->title}">
+        {/if}
+        <div class="card-body">
+            <h3 class="card-title">{$article->title}</h3>
+            <p class="card-text">{$article->description}</p>
+
+        </div>
+    </div>
+{/block}
+
