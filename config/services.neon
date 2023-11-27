@@ -1,0 +1,36 @@
+services:
+    - app\Forms\FormFactory
+    - app\Forms\SignInFormFactory
+    - app\Forms\SignUpFormFactory
+    - app\Model\CommentManager
+    - app\Model\CmsManager(picturePath: "%wwwDir%/images/cms")
+    - app\Model\ContactManager
+    - app\FrontModule\Presenters\ContactPresenter(%contactEmail%)
+    router: App\Router\RouterFactory::createRouter
+    authenticator: App\Model\UserManager
+    security.authorizator:
+        setup:
+            - addResource(Error)
+            - addResource(Admin:Dashboard)
+            - addResource(Admin:Sign)
+            - addResource(Admin:Category)
+            - addResource(Admin:Article)
+            - addResource(Admin:User)
+            - addResource(Admin:Comment)
+            - addResource(Admin:Cms)
+            - addResource(Admin:Setting)
+            - allow(admin)
+            - allow(guest, Error)
+            - allow(guest, Admin:Sign)
+            - allow(member, Admin:Dashboard, default)
+            - allow(member, Admin:Sign, out)
+            - allow(member, Admin:Comment)
+            - allow(member, Admin:Article)
+
+
+
+search:
+	-	in: %appDir%
+		classes:
+			- *Factory
+			- *Facade

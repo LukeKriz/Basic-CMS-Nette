@@ -1,0 +1,31 @@
+parameters:
+	contactEmail: 'mail@lukekriz.cz'
+
+
+application:
+	errorPresenter: Error
+	mapping:
+		*: app\*Module\Presenters\*Presenter
+
+security:
+    roles:
+        guest:
+        member: [guest]
+        admin:
+services:
+    - app\Model\ArticleManager(picturePath: "%wwwDir%/images/articles")
+    - app\Model\CategoryManager
+
+latte:
+	strictTypes: yes
+	macros:
+		- Nittro\Bridges\NittroLatte\NittroMarcos
+
+session:
+	expiration: 14 days
+
+
+di:
+	export:
+		parameters: no
+		tags: no

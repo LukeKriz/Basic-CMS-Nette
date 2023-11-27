@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-private xmlns="http://www.netbeans.org/ns/project-private/1">
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
+    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
+        <group>
+            <file>file:/C:/wamp64/www/CMS/app/FrontModule/Presenters/templates/@layout.latte</file>
+            <file>file:/C:/wamp64/www/CMS/app/FrontModule/Presenters/HomepagePresenter.php</file>
+            <file>file:/C:/wamp64/www/CMS/app/AdminModule/Presenters/CategoryPresenter.php</file>
+            <file>file:/C:/wamp64/www/CMS/app/Components/Comments.php</file>
+            <file>file:/C:/wamp64/www/CMS/app/Components/templates/comments.latte</file>
+            <file>file:/C:/wamp64/www/CMS/app/Model/CommentManager.php</file>
+            <file>file:/C:/wamp64/www/CMS/app/AdminModule/Presenters/CommentPresenter.php</file>
+            <file>file:/C:/wamp64/www/CMS/app/FrontModule/Presenters/templates/Cms/default.latte</file>
+            <file>file:/C:/wamp64/www/CMS/app/FrontModule/Presenters/ArticlePresenter.php</file>
+            <file>file:/C:/wamp64/www/CMS/app/FrontModule/Presenters/templates/Homepage/default.latte</file>
+            <file>file:/C:/wamp64/www/CMS/app/AdminModule/Presenters/templates/@layout.latte</file>
+            <file>file:/C:/wamp64/www/CMS/app/AdminModule/Presenters/CmsPresenter.php</file>
+            <file>file:/C:/wamp64/www/CMS/app/FrontModule/Presenters/CmsPresenter.php</file>
+            <file>file:/C:/wamp64/www/CMS/app/FrontModule/Presenters/BaseFrontPresenter.php</file>
+            <file>file:/C:/wamp64/www/CMS/app/FrontModule/Presenters/templates/Contact/default.latte</file>
+            <file>file:/C:/wamp64/www/CMS/config/services.neon</file>
+            <file>file:/C:/wamp64/www/CMS/config/common.neon</file>
+            <file>file:/C:/wamp64/www/CMS/app/AdminModule/Presenters/templates/Cms/list.latte</file>
+            <file>file:/C:/wamp64/www/CMS/app/FrontModule/Presenters/ContactPresenter.php</file>
+            <file>file:/C:/wamp64/www/CMS/app/FrontModule/Presenters/templates/Article/detail.latte</file>
+            <file>file:/C:/wamp64/www/CMS/app/Presenters/templates/@layout.latte</file>
+            <file>file:/C:/wamp64/www/CMS/app/Router/RouterFactory.php</file>
+            <file>file:/C:/wamp64/www/CMS/app/FrontModule/Presenters/templates/Article/default.latte</file>
+            <file>file:/C:/wamp64/www/CMS/app/AdminModule/Presenters/templates/Comment/list.latte</file>
+            <file>file:/C:/wamp64/www/CMS/app/AdminModule/Presenters/templates/Cms/editor.latte</file>
+            <file>file:/C:/wamp64/www/CMS/app/Model/CmsManager.php</file>
+        </group>
+    </open-files>
+</project-private>
